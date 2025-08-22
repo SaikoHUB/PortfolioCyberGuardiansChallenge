@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Missions - Jean-Baptiste Delbeau</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-title">Portfolio Stage</span>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="association.html" class="nav-link">L'Association</a></li>
+                <li><a href="missions.html" class="nav-link active">Mes Missions</a></li>
+                <li><a href="apprentissages.html" class="nav-link">Apprentissages</a></li>
+                <li><a href="environnement.html" class="nav-link">Environnement</a></li>
+                <li><a href="defis.html" class="nav-link">Défis & Réalisations</a></li>
+                <li><a href="bilan.html" class="nav-link">Bilan Personnel</a></li>
+                <li><a href="situation-actuelle.html" class="nav-link">Situation Actuelle</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 37.5%"></div>
+            </div>
+
+            <div class="page-header">
+                <h1>Mes Missions et Responsabilités</h1>
+                <p>Conception et développement des épreuves CTF pour la deuxième édition du Cyber Guardians Challenge</p>
+            </div>
+
+            <div class="card">
+                <h2>💼 Mission Principale</h2>
+                <div class="mission-grid">
+                    <div class="mission-info">
+                        <h3>Poste occupé</h3>
+                        <p>Stagiaire en Cybersécurité - Concepteur d'Épreuves CTF</p>
+                        
+                        <h3>Stagiaire</h3>
+                        <ul>
+                            <li><strong>Nom :</strong> Jean-Baptiste Delbeau</li>
+                            <li><strong>Formation :</strong> 2ème année Bachelor Informatique chez Ynov</li>
+                            <li><strong>Orientation :</strong> 3ème année Infrastructure et Réseau (2024-2025)</li>
+                            <li><strong>Email :</strong> jean-baptiste.delbeau@ynov.com</li>
+                            <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/jean-baptiste-delbeau-6b2093306" target="_blank">Profil LinkedIn</a></li>
+                        </ul>
+
+                        <h3>Durée et modalités du stage</h3>
+                        <div class="stage-info">
+                            <div class="info-box">
+                                <strong>Début</strong>
+                                <span>23 mai 2024</span>
+                            </div>
+                            <div class="info-box">
+                                <strong>Fin</strong>
+                                <span>16 juin 2024</span>
+                            </div>
+                            <div class="info-box">
+                                <strong>Durée</strong>
+                                <span>25 jours</span>
+                            </div>
+                            <div class="info-box">
+                                <strong>Horaires</strong>
+                                <span>5h/jour</span>
+                            </div>
+                        </div>
+                        <p>Stage de 125 heures au total, concentré sur la préparation de l'événement du 25 mai 2024.</p>
+                    </div>
+                    <div class="mission-skills">
+                        <h3>Compétences développées</h3>
+                        <div class="badges">
+                            <span class="badge">Conception CTF</span>
+                            <span class="badge">OSINT</span>
+                            <span class="badge">Social Engineering</span>
+                            <span class="badge">API Security</span>
+                            <span class="badge">Linux Administration</span>
+                            <span class="badge">Pédagogie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Épreuves Conçues</h2>
+                <div class="epreuves">
+                    <div class="epreuve">
+                        <div class="epreuve-header">
+                            <h3>Épreuve 1 : Investigation & Phishing</h3>
+                            <span class="badge">2h</span>
+                        </div>
+                        <p>Scénario basé sur une fuite de données Airbus. Les participants mènent une investigation OSINT, créent une page de phishing, puis exploitent une API avec 7 méthodes HTTP dans un ordre précis.</p>
+                        <div class="phases">
+                            <div class="phase">
+                                <strong>Phase 1 (20min):</strong> OSINT sur LinkedIn, GitHub, Steam pour trouver email, pseudo "Maojiro9" et IP de l'API
+                            </div>
+                            <div class="phase">
+                                <strong>Phase 2 (20min):</strong> Création page de phishing crédible avec contexte Airbus
+                            </div>
+                            <div class="phase">
+                                <strong>Phase 3 (1h):</strong> Brute-force API avec méthodes HTTP ordonnées pour récupérer clé SSH et IP
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="epreuve">
+                        <div class="epreuve-header">
+                            <h3>Épreuve 2 : Escalade de Privilèges</h3>
+                            <span class="badge">2h</span>
+                        </div>
+                        <p>Post-exploitation sur système Linux altéré, puis escalade progressive vers les droits administrateur.</p>
+                        <div class="phases">
+                            <div class="phase">
+                                <strong>Phase 1 (20min):</strong> Connexion SSH sur système avec aliases corrompus. Script Cron expulse toutes les 2 minutes.
+                            </div>
+                            <div class="phase">
+                                <strong>Phase 2:</strong> Exploitation de vulnérabilités pour monter en droits jusqu'au sudo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="epreuve">
+                        <div class="epreuve-header">
+                            <h3>Épreuve 3 : Attaque-Défense (Finalistes)</h3>
+                            <span class="badge">2h</span>
+                        </div>
+                        <p>Épreuve finale en temps réel où chaque équipe finaliste dispose de sa propre machine virtuelle contenant des vulnérabilités.</p>
+                        <div class="attack-defense">
+                            <div class="team red-team">
+                                <strong>Red Team (Attaque):</strong> Identifier et exploiter les vulnérabilités des machines adverses, maintenir l'accès, récupérer des flags
+                            </div>
+                            <div class="team blue-team">
+                                <strong>Blue Team (Défense):</strong> Sécuriser sa propre machine, patcher les vulnérabilités, détecter les intrusions, maintenir les services
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>💻 Exemple Technique : Résultats API Épreuve 1</h2>
+                <div class="api-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Méthode HTTP</th>
+                                <th>Endpoint</th>
+                                <th>Contenu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>GET</code></td>
+                                <td>lestat</td>
+                                <td class="success">Clé SSH privée (base64)</td>
+                            </tr>
+                            <tr>
+                                <td><code>TRACE</code></td>
+                                <td>naenae</td>
+                                <td class="info">IP: 88.192.45.98</td>
+                            </tr>
+                            <tr>
+                                <td><code>DELETE</code></td>
+                                <td>benjamin1</td>
+                                <td>Fragment clé</td>
+                            </tr>
+                            <tr>
+                                <td><code>POST</code></td>
+                                <td>manchas</td>
+                                <td>Fragment clé</td>
+                            </tr>
+                            <tr>
+                                <td><code>OPTIONS</code></td>
+                                <td>ashton1</td>
+                                <td>Fragment clé</td>
+                            </tr>
+                            <tr>
+                                <td><code>PUT</code></td>
+                                <td>bubblegum1</td>
+                                <td>Fragment clé</td>
+                            </tr>
+                            <tr>
+                                <td><code>PATCH</code></td>
+                                <td>channing</td>
+                                <td>Fragment clé</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Logique :</strong> "gtdpoopupa" = g(GET) t(TRACE) d(DELETE) po(POST) o(OPTIONS) pu(PUT) pa(PATCH)</p>
+            </div>
+
+            <div class="page-navigation">
+                <div class="nav-prev">
+                    <a href="association.html" class="btn btn-secondary">
+                        ← Présentation de l'Association
+                    </a>
+                </div>
+                <div class="nav-next">
+                    <a href="apprentissages.html" class="btn btn-primary">
+                        Apprentissages et Compétences →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
