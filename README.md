@@ -1,43 +1,56 @@
-# Portfolio de Stage - Jean-Baptiste Delbeau
 
-Portfolio web présentant mon expérience de stage chez Cyber Guardians Challenge, une association étudiante spécialisée en cybersécurité à Toulouse.
+# Portfolio de Stage – Jean-Baptiste Delbeau
+
+Portfolio web présentant mon expérience de stage chez Cyber Guardians Challenge, association étudiante en cybersécurité à Toulouse.
 
 ## À propos
 
-Ce site présente le portfolio de stage de Jean-Baptiste Delbeau chez Cyber Guardians Challenge, une association spécialisée en cybersécurité à Toulouse.
+Ce site présente mon parcours, mes missions, les compétences acquises et un bilan personnel lors de mon stage.
 
-## Contenu
+## Structure du projet
 
-Site web statique présentant l'expérience de stage en cybersécurité, les missions réalisées, les compétences acquises et le bilan personnel.
+```
+racine/
+├── index.html
+├── association.html
+├── missions.html
+├── apprentissages.html
+├── environnement.html
+├── defis.html
+├── bilan.html
+├── situation-actuelle.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/
+	└── ...
+```
 
-## Structure
+Tous les fichiers HTML sont à la racine. Les chemins des ressources sont désormais :
+- `css/style.css`
+- `js/main.js`
+- `images/nom-image.png`
+- `index.html` (pour la navigation)
 
-- **index.html** - Site complet en une seule page
-- **style.css** - Styles et design responsive
-- **script.js** - Navigation entre sections
-- **images/** - Photos et logos du portfolio
+## Ouvrir le site en local
 
-## Utilisation
+### Méthode recommandée : Live Server (VS Code)
 
-1. Ouvrir `index.html` dans un navigateur
-2. Naviguer entre les sections avec le menu ou les boutons
-3. Compatible mobile et desktop
+1. Installez l’extension **Live Server** dans VS Code.
+2. Faites un clic droit sur `index.html` ou une page HTML de votre choix.
+3. Sélectionnez **"Open with Live Server"**.
+4. Le site s’ouvre dans votre navigateur, avec navigation et ressources fonctionnelles.
 
-## Déploiement GitHub Pages
+### Autre méthode
 
-1. Créer un repository sur GitHub
-2. Uploader tous les fichiers
-3. Aller dans Settings > Pages
-4. Sélectionner "Deploy from a branch" > "main"
-5. Le site sera accessible à `https://votre-username.github.io/nom-du-repo/`
+Ouvrez simplement `index.html` (ou toute page HTML) dans votre navigateur.
 
-## Hébergement
+## Notes
 
-Compatible avec tous les hébergeurs de sites statiques :
-- GitHub Pages (gratuit)
-- Netlify (gratuit)
-- Surge.sh (gratuit)
+- Plus de sous-dossiers pour les pages : tout est à la racine.
+- Les liens et imports ont été adaptés pour fonctionner en local et sur tout hébergement statique.
 
 ---
 
-*Jean-Baptiste Delbeau - Étudiant Ynov Campus Toulouse*
+*Jean-Baptiste Delbeau – Étudiant Ynov Campus Toulouse*
